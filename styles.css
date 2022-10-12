@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing:border-box;
+    
+}
+
+:root {
+    /**PRIMARY COLORS**/
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    /**MAIN BACKGROUND**/
+    --very-dark-blue-main: hsl(217, 54%, 11%);
+    /**CARD BACKGROUND**/
+    --very-dark-blue-card: hsl(216, 50%, 16%);
+    /**LINE**/
+    --very-dark-blue-ln: hsl(215, 32%, 27%);
+    --white: hsl(0,0%,100%); 
+}
+
+body {
+    background-color: var(--very-dark-blue-main);
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 1px);
+    
+}
+
+#card{
+    background-color: var(--very-dark-blue-card);
+    padding: 1.25rem;
+    border-radius: 0.625rem;
+    margin-bottom: 2rem;
+    display:flexbox;
+    justify-content: center;
+    height: 500px;
+    width: 300px;
+    margin: 1rem;
+}
+
+#name {
+    color: white;
+    font-size: 110%;
+    margin-top: 1rem;
+    font-weight: normal;
+}
+
+#description {
+    color: var(--soft-blue);
+    font-size: 85%;
+    margin-top: 1rem;
+}
+
+#details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#cripto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 5.5rem;
+}
+
+#etherium {
+    color: var(--cyan);
+    font-size: 75%;
+    padding-left: 0.5rem;
+}
+
+#time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#date {
+    color: var(--soft-blue);
+    font-size: 75%;
+    padding-left: 0.5rem;
+}
+
+body #card img {
+    max-width: 100%;
+    border-radius: 0.625rem;
+}
+
+#card .line {
+    border-top: 1px solid var(--soft-blue);
+    height: 2px;
+    max-width: 325px;
+    padding: 0px;
+    margin: 20px auto 0 auto;
+}
+
+#card #credits {
+    font-size: 15px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    color: white;
+}
+
+#credits #creator {
+    color: var(--soft-blue);
+    margin-right: 0.3rem;
+    margin-left: 0.5rem;
+    font-family: "Outfit", sans-serif;
+    font-size: 90%;
+    font-weight: lighter;
+}
+
+#credits #author {
+    font-family: "Outfit", sans-serif;
+    font-size: 90%;
+    font-weight: lighter;
+}
+
+#credits #picture {
+    max-width: 10%;
+    border:0.05rem solid white;
+    border-radius: 100%;
+    padding: 0%;
+
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    color: white;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
