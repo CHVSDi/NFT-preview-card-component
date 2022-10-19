@@ -4,20 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | NFT preview card component</title>
 
 </head>
 <body>
 <div id="card">
-  <a href="#">
-    <img src="image-equilibrium.jpg" alt="image-equilibrium Cube witch is resting on one of the corners 
-                                          over a reflective surface, can see the red-ish colors inside it's core.">
-  <a/>  
-  <a href="#">
+  <div class="img">
+    <img src="./images/image-equilibrium.jpg" alt="image-equilibrium">
+    <div class="obj">
+      <svg class="view" width="48" height="48" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h48v48H0z"/><path d="M24 9C14 9 5.46 15.22 2 24c3.46 8.78 12 15 22 15 10.01 0 18.54-6.22 22-15-3.46-8.78-11.99-15-22-15Zm0 25c-5.52 0-10-4.48-10-10s4.48-10 10-10 10 4.48 10 10-4.48 10-10 10Zm0-16c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6Z" fill="#FFF" fill-rule="nonzero"/></g></svg>
+    </div>
+  </div>
+  <a class="NFTname" href="#">
     <h1 id="name">Equilibrium #3429</h1>
-  <a/>
+  </a>
   <p id="description">
     Our Equilibrium collection promotes balance and calm.
   </p>
@@ -38,14 +40,12 @@
   </div>
   <div class="line"></div>
   <div id="credits">
-    <a href="#"> 
-      <img id="picture" src="image-avatar.png" alt="head-shot of Jules Wyvern">
-    </a>
+    <img id="picture" src="./images/image-avatar.png" alt="image-avatar">
     <p id="creator">
       Creation of
     </p>
     <p id="author">
-      Jules Wyvern
+      <a href="#">Jules Wyvern</a> 
     </p> 
    </div>
 </div>
