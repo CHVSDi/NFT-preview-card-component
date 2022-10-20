@@ -174,3 +174,18 @@ body #card .img img {
     border-radius: 100%;
     padding: 0%;
 }
+
+@media (min-width: 1440px) {
+ body main {
+    max-width: 375px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .atribution {
+    justify-content: center;
+ }
+
+}
