@@ -20,7 +20,7 @@
     --white: hsl(0,0%,100%); 
 }
 
-body {
+body main {
     background-color: var(--very-dark-blue-main);
     font-family: "Outfit", sans-serif;
     display: flex;
