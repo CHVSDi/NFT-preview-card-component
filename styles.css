@@ -182,6 +182,11 @@ body #card .img img {
     padding: 0%;
 }
 
+.atribution {
+ color: white;
+ text-decoration: none;
+}
+
 @media (min-width: 1440px) {
  body main {
     max-width: 375px;
