@@ -33,9 +33,9 @@ body main {
     align-items: center;
     justify-content: center;
     max-width: 100%;
-    position: relative;
-    left: 550px;
-    top: 100px;
+    position: absolute;
+    left: 30%;
+    top: 15%;
 }
 
 #card{
@@ -43,10 +43,11 @@ body main {
     padding: 1.25rem;
     border-radius: 0.625rem;
     margin-bottom: 2rem;
-    display:flexbox;
+    display: flexbox;
     justify-content: center;
     max-width: 300px;
     margin: 1rem;
+    margin-left: 34%;
 }
 
 #name {
@@ -73,7 +74,8 @@ body main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-right: 5.5rem;
+    padding-right: 3.5rem;
+    width: 250px;
 }
 
 #etherium {
@@ -86,6 +88,7 @@ body main {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 250px;
 }
 
 #date {
@@ -102,9 +105,9 @@ body #card .img img {
 
 .obj {
   position: absolute;
-  bottom: 51%;
-  height: 259px;
-  width: 259px;
+  bottom: 47.5%;
+  height: 236px;
+  width: 235px;
   background-color: var(--cyan);
   opacity: 0;
   cursor: pointer;
@@ -182,22 +185,53 @@ body #card .img img {
     padding: 0%;
 }
 
-.atribution {
- color: white;
- text-decoration: none;
-}
-
-@media (min-width: 1440px) {
+@media (max-width: 1440px) {
  body main {
     max-width: 375px;
-    margin: 0;
+    margin-right: 375px;
     padding: 0;
+    margin: 0;
     align-items: center;
     justify-content: center;
  }
 
- .atribution {
-    justify-content: center;
+ #card {
+    width: 275px;
+    position: relative;
+    right: 15%;
+    bottom: 10px;
  }
 
+
+ .attribution {
+    justify-content: center;
+    position: relative;
+    right: 15%;
+    text-align: center;
+    color: white;
+    font-size: small;
+    font-weight: lighter;
+    right: -5%;
+    bottom: 15px;
+ }
+
+ .attribution a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+ }
 }
+
+
+@media (max-width:375px) {
+    #card {
+        position: relative;
+        right: 135px;
+    }
+
+    .attribution {
+        position: relative;
+        right: 45px;
+    }
+}
+
